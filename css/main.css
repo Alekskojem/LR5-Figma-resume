@@ -116,7 +116,7 @@ body {
     margin-bottom: 8px;
 }
 
-/* Нагороди */
+/* Нагороди яких не маю */
 .award-header {
     display: flex;
     justify-content: space-between;
@@ -126,11 +126,21 @@ body {
     margin-bottom: 5px;
 }
 
-/* Посилання */
+/* Посилання не всі роблять бо не все маю */
 .links-list {
     list-style: none;
     font-size: 13px;
     color: #e5e7eb;
+}
+
+.links-list a {
+    color: #ffffff; 
+    text-decoration: none; 
+}
+
+.links-list a:hover {
+    text-decoration: underline; 
+    color: #d1d5db; /* Зміна коліру при наведенні */
 }
 
 .links-list li {
@@ -149,9 +159,9 @@ body {
 }
 
 
-/* ============================
-   ПРАВА КОЛОНКА (БІЛА)
-   ============================ */
+/* ==============
+   ПРАВА КОЛОНКА
+   ============== */
 .main-content {
     width: 65%;
     background-color: #fff;
@@ -218,7 +228,7 @@ body {
     line-height: 1.6;
 }
 
-/* --- Адаптивність для мобільних --- */
+/* --- Адаптивність для мобільних  щоб не робити в 8 лабі--- */
 @media (max-width: 768px) {
     .left-sidebar, .main-content {
         width: 100%; /* На телефоні колонки стають на всю ширину */
