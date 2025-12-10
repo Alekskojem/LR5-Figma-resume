@@ -1,5 +1,7 @@
 # LR5-Figma-resume
 LR5-Figma-resume
+## Зразок тут:
+# https://www.figma.com/design/DDcsPq9c07F6wyvREx89Og/CV-Resume-Template--Community-?node-id=2-30&p=f&t=wQ6gX9yygdCFzLvF-0
 # Лабораторна робота No5
 
 ## Допрацювати головну сторінку сайту відповідно до шаблону Portfolio UI - Web
