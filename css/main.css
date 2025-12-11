@@ -116,7 +116,11 @@ body {
     margin-bottom: 8px;
 }
 
-/* Нагороди яких не маю */
+/* Нагороди */
+.award-item {
+    margin-bottom: 10px;
+}
+
 .award-header {
     display: flex;
     justify-content: space-between;
@@ -126,21 +130,11 @@ body {
     margin-bottom: 5px;
 }
 
-/* Посилання не всі роблять бо не все маю */
+/* Посилання */
 .links-list {
     list-style: none;
     font-size: 13px;
     color: #e5e7eb;
-}
-
-.links-list a {
-    color: #ffffff; 
-    text-decoration: none; 
-}
-
-.links-list a:hover {
-    text-decoration: underline; 
-    color: #d1d5db; /* Зміна коліру при наведенні */
 }
 
 .links-list li {
@@ -158,10 +152,21 @@ body {
     margin-left: -1em;
 }
 
+/* СТИЛІ ДЛЯ ПОСИЛАНЬ */
+.links-list a {
+    color: #ffffff; /* Робимо текст посилань білим */
+    text-decoration: none; /* Видаляємо підкреслення */
+}
 
-/* ==============
-   ПРАВА КОЛОНКА
-   ============== */
+.links-list a:hover {
+    text-decoration: underline; /* Додаємо підкреслення при наведенні */
+    color: #d1d5db;
+}
+
+
+/* ============================
+   ПРАВА КОЛОНКА (БІЛА)
+   ============================ */
 .main-content {
     width: 65%;
     background-color: #fff;
@@ -192,14 +197,72 @@ body {
 
 /* Елементи списку (досвід, освіта) */
 .timeline-item {
-    margin-bottom: 20px;
+    margin-bottom: 25px; /* Збільшений відступ між елементами */
 }
 
+/* Контейнер для лого та вмісту (використовуємо Flexbox) */
+.timeline-content-wrapper {
+    display: flex;
+    gap: 15px; /* Відступ між квадратом та текстом */
+}
+
+/* Стилі для порожнього квадрата (логотипу) */
+.logo-placeholder {
+    min-width: 40px; /* Ширина квадрата */
+    height: 40px; /* Висота квадрата */
+    border: 1px solid #c7c7c7; /* Тонка сіра рамка */
+    border-radius: 4px;
+    
+    /* СТИЛІ, ЯКІ ЗАБЕЗПЕЧУЮТЬ ПРАВИЛЬНЕ ВІДОБРАЖЕННЯ ЛОГОТИПІВ: */
+    background-size: 70%; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff; /* Фон квадрата - білий */
+}
+
+/* --- СТИЛІ ДЛЯ КОНКРЕТНИХ ЛОГОТИПІВ (Потрібно змінити URL на ваші файли!) --- */
+
+/* 1. Університет DUIKT */
+.logo-duikt {
+    background-image: url('../images/logo_duikt.png'); 
+}
+
+/* 2. Upwork */
+.logo-upwork {
+    background-image: url('../images/logo_upwork.png');
+    background-color: #e6f7e6; /* Легкий фон, що пасує до Upwork */
+}
+
+/* 3. Currinda */
+.logo-currinda {
+    background-image: url('../images/logo_currinda.png');
+}
+
+/* 4. Bubays */
+.logo-bubays {
+    background-image: url('../images/logo_bubays.png');
+}
+
+/* 5. Services Company */
+.logo-services {
+    background-image: url('../images/logo_services.png');
+}
+
+/* --- КІНЕЦЬ СТИЛІВ ЛОГОТИПІВ --- */
+
+
+/* Розтягуємо вміст, що залишився */
+.timeline-content {
+    flex-grow: 1;
+}
+
+/* Дата в освіті */
 .timeline-date {
     font-size: 12px;
     font-weight: 700;
     color: #6b7280;
-    margin-bottom: 4px;
+    margin-bottom: 8px; 
+    display: block;
 }
 
 .timeline-head {
@@ -221,16 +284,20 @@ body {
     margin-bottom: 8px;
 }
 
-.timeline-item p {
+.timeline-content p {
     font-size: 13px;
     color: #374151;
     text-align: justify;
     line-height: 1.6;
 }
 
-/* --- Адаптивність для мобільних  щоб не робити в 8 лабі--- */
+/* --- Адаптивність для мобільних --- */
 @media (max-width: 768px) {
     .left-sidebar, .main-content {
         width: 100%; /* На телефоні колонки стають на всю ширину */
+    }
+
+    .main-content {
+        padding: 20px; /* Менші відступи на мобільних */
     }
 }
