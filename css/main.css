@@ -1,4 +1,4 @@
-/* --- Базові налаштування --- */
+/* --- Це налаштування базове --- */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,26 +8,26 @@
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    background-color: #e0e0e0; /* Сірий фон сторінки */
+    background-color: #e0e0e0; /* Фон сторінки */
     display: flex;
     justify-content: center;
     padding: 20px 0;
     line-height: 1.5;
 }
 
-/* --- Головний контейнер (Аркуш) --- */
+/* --- Головний контейнер  --- */
 .resume-container {
     width: 100%;
-    max-width: 900px; /* Ширина A4 */
+    max-width: 900px; /* Ширина A4 як в оригіналі */
     background: #fff;
     display: flex;
     flex-wrap: wrap; /* Дозволяє адаптивність на мобільних */
     box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 
-/* ============================
-   ЛІВА КОЛОНКА (СИНЯ)
-   ============================ */
+/* =============
+   ЛІВА КОЛОНКА 
+   ============= */
 .left-sidebar {
     width: 35%;
     background-color: #233a5f;
@@ -42,7 +42,7 @@ body {
 .profile-photo {
     width: 120px;
     height: 120px;
-    background-color: #6e7885; /* Колір, якщо фото немає */
+    background-color: #6e7885; /* Колір, без фото */
     border-radius: 50%;
     margin: 0 auto 15px auto;
     border: 4px solid #fff;
@@ -68,7 +68,7 @@ body {
     font-size: 14px;
     font-weight: 400;
     text-align: center;
-    color: #d1d5db; /* Світло-сірий */
+    color: #d1d5db; /* Світлий, або свій якийсь, міняємо для себе */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -96,7 +96,7 @@ body {
     margin: 10px 0;
 }
 
-/* Заголовки зліва */
+/* Заголовки ліва сайд бар */
 .section-title-light {
     font-size: 16px;
     font-weight: 700;
@@ -154,7 +154,7 @@ body {
 
 /* СТИЛІ ДЛЯ ПОСИЛАНЬ */
 .links-list a {
-    color: #ffffff; /* Робимо текст посилань білим */
+    color: #ffffff; /* Білий текст посилань, синий пагано видно */
     text-decoration: none; /* Видаляємо підкреслення */
 }
 
@@ -164,9 +164,9 @@ body {
 }
 
 
-/* ============================
+/* =====================
    ПРАВА КОЛОНКА (БІЛА)
-   ============================ */
+   ===================== */
 .main-content {
     width: 65%;
     background-color: #fff;
@@ -195,32 +195,30 @@ body {
     color: #4b5563;
 }
 
-/* Елементи списку (досвід, освіта) */
+/* Елементи списку досвід, освіта */
 .timeline-item {
     margin-bottom: 25px; /* Збільшений відступ між елементами */
 }
 
-/* Контейнер для лого та вмісту (використовуємо Flexbox) */
+/* Контейнер лого та вмісту, це Flexbox */
 .timeline-content-wrapper {
     display: flex;
     gap: 15px; /* Відступ між квадратом та текстом */
 }
 
-/* Стилі для порожнього квадрата (логотипу) */
+/* Стилі порожнього квадрата логотипу */
 .logo-placeholder {
     min-width: 40px; /* Ширина квадрата */
     height: 40px; /* Висота квадрата */
-    border: 1px solid #c7c7c7; /* Тонка сіра рамка */
+    border: 1px solid #c7c7c7; /* Тонка сіра рамка для феншуя*/
     border-radius: 4px;
     
-    /* СТИЛІ, ЯКІ ЗАБЕЗПЕЧУЮТЬ ПРАВИЛЬНЕ ВІДОБРАЖЕННЯ ЛОГОТИПІВ: */
+    /* ВІДОБРАЖЕННЯ ЛОГОТИПІВ: */
     background-size: 70%; 
     background-repeat: no-repeat;
     background-position: center;
-    background-color: #ffffff; /* Фон квадрата - білий */
+    background-color: #ffffff; /* Фон квадрата - білий, можна поміняти */
 }
-
-/* --- СТИЛІ ДЛЯ КОНКРЕТНИХ ЛОГОТИПІВ (Потрібно змінити URL на ваші файли!) --- */
 
 /* 1. Університет DUIKT */
 .logo-duikt {
@@ -230,7 +228,7 @@ body {
 /* 2. Upwork */
 .logo-upwork {
     background-image: url('../images/logo_upwork.png');
-    background-color: #e6f7e6; /* Легкий фон, що пасує до Upwork */
+    background-color: #e6f7e6; /* Фон можна поміняти */
 }
 
 /* 3. Currinda */
@@ -248,10 +246,7 @@ body {
     background-image: url('../images/logo_services.png');
 }
 
-/* --- КІНЕЦЬ СТИЛІВ ЛОГОТИПІВ --- */
 
-
-/* Розтягуємо вміст, що залишився */
 .timeline-content {
     flex-grow: 1;
 }
